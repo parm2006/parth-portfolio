@@ -1,20 +1,19 @@
 # Particle
 
-**Status:** Not started  
-**Repo:** Local only for now
+**Status:** Concept
 
 Research discovery platform idea, roughly "YouTube for scientific papers."
 
-## Current Direction
+## Concept
 
-Particle should stay connected to Scholarly Search Engine. Scholarly can become the search/indexing/retrieval foundation that Particle builds on later.
-
-Do not start Particle seriously until Scholarly has a stronger working backend and search experience.
-
-## Product Idea
+Particle would make academic research easier to browse, discover, and save through a feed-based product experience.
 
 - Personalized discovery feed for scientific papers.
 - Better reading and browsing UX.
 - Recommendations.
 - Saved/read status.
 - Community/social context around research.
+
+## Relationship To Scholarly Search
+
+Particle could eventually use the Scholarly Search Engine project as a search and retrieval backend.

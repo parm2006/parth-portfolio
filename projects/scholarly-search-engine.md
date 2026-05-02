@@ -7,10 +7,9 @@ Fairness-aware academic search engine for finding research papers from a user qu
 
 ## Current Direction
 
-- Keep improving the existing backend/frontend rather than treating this as not started.
-- Use the code analysis document in the local project as a roadmap.
-- Prioritize correctness and basic usefulness before large-scale semantic infrastructure.
-- Eventually, this can become the search/retrieval foundation for Particle.
+- Backend and frontend for academic paper search.
+- Fairness-aware ranking ideas layered on top of baseline relevance.
+- Potential foundation for future research-discovery products.
 
 ## Likely Next Work
 

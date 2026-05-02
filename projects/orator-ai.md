@@ -16,6 +16,6 @@ Full-stack AI voice conversation practice app using real-time voice interaction.
 ## Future Polish Ideas
 
 - Better automated tests.
-- Deployment cleanup.
+- Production deployment hardening.
 - Stronger product documentation.
 - More progress tracking and feedback features.

@@ -1,15 +1,18 @@
 # AI Screenshot Organizer
 
-**Status:** Needs verification before marking completed  
+**Status:** Prototype  
 **Repo:** [parm2006/AI_Screenshot_Organizer](https://github.com/parm2006/AI_Screenshot_Organizer)
 
-Project for organizing screenshots into folders.
+AI-assisted utility for organizing screenshot folders into useful categories.
 
-## Current Decision
+## Highlights
 
-This may already have been fixed in a previous chat. Later cleanup plan:
+- Automates a repetitive file-organization workflow.
+- Uses AI classification to sort screenshots by content or topic.
+- Designed as a practical personal productivity tool.
 
-- Test the current improved organizer.
-- Remove old or duplicate files.
-- Rename files so the main entry point is obvious.
-- If it still works well, move it into a local `Completed` folder.
+## Next Improvements
+
+- Improve setup documentation.
+- Package the main entry point more clearly.
+- Add safer dry-run and preview behavior.

@@ -1,21 +1,16 @@
 # ClashOfClankers
 
-**Status:** Not started  
-**Repo:** Local only for now
+**Status:** Concept
 
-Clash of Clans automation script for routine maintenance tasks.
+Automation concept for routine Clash of Clans maintenance tasks using Android device control and computer vision.
 
-## Current Direction
+## Concept
 
-This is the first new project Parth wants to attempt among the not-started ideas.
+The project would use screenshots, template matching, and controlled input events to identify game state and automate repetitive, low-level interactions.
 
-Current blocker: emulator setup. BlueStacks has not worked, and Google Play Games has also not worked. Before implementation, solve Android environment setup and confirm ADB screenshot/tap control is possible.
+## Technical Focus
 
-## Early Scope
-
-- Open the game.
-- Take screenshots.
-- Recognize basic village state.
-- Collect resources.
-- Use safe/passive actions before automating attacks.
-- Use an alternate account for testing.
+- Android emulator or device automation.
+- ADB screenshot and tap pipeline.
+- OpenCV-based screen-state detection.
+- Conservative task automation and failure handling.

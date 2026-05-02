@@ -1,17 +1,16 @@
 # FossilCV
 
-**Status:** Not started  
-**Repo:** Local only for now
+**Status:** Concept
 
 Computer vision project for identifying fossils from images.
 
-## Current Direction
+## Concept
 
-This is personally important as a learning project. Parth wants to build it himself to learn:
+FossilCV would classify fossil images and return likely fossil types, confidence scores, and supporting educational metadata.
 
-- Python computer vision libraries.
-- How to train a CV model.
-- How to run inference with a trained model.
-- How to turn a CV model into a useful application.
+## Technical Focus
 
-The first version should prioritize learning the full dataset-to-model-to-prediction path, even if the product is rough.
+- Dataset collection and cleaning.
+- Image preprocessing and augmentation.
+- Model training with Python CV/ML libraries.
+- Inference API or lightweight app interface.

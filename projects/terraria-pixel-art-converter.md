@@ -7,11 +7,9 @@ Tool that converts pixel art images into Terraria block/wall material lists.
 
 ## Current Direction
 
-- Rename local folder from `claudepixels` to `Terraria Pixel Art Converter`.
-- Verify the CLI still works.
-- Confirm included block/wall data is usable.
-- Build a real deployable frontend.
-- Share publicly, likely on Reddit, once the hosted version is polished.
+- Existing CLI converts image colors into Terraria block/wall material counts.
+- Planned web interface would make the tool accessible without local Python setup.
+- Useful for Terraria builders who want a faster way to plan pixel art.
 
 ## Frontend Workflow
 
