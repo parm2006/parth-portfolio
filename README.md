@@ -4,6 +4,12 @@ A central map of Parth Maheshwari's projects, experiments, and build ideas.
 
 This repo is an index. Each serious project should live in its own GitHub repo, while this repo links to those repos and tracks current status, next steps, and project relationships.
 
+## License And Copyright
+
+Copyright (c) 2026 Parth Maheshwari.
+
+This portfolio/index repository is licensed under the [MIT License](LICENSE). Linked project repositories may use different licenses or include third-party assets/dependencies with their own terms. Check each linked project before reusing code or assets.
+
 ## Active Projects
 
 | Project | Status | Repo | Notes |
