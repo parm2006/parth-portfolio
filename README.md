@@ -1,4 +1,4 @@
-# Parth Portfolio
+# Parth's Portfolio
 
 A central map of Parth Maheshwari's projects, experiments, and build ideas.
 
