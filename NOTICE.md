@@ -1,6 +1,6 @@
 # Notice
 
-Copyright (c) 2026 Parth Maheshwari.
+Copyright (c) 2026 Parth Mohnot.
 
 This repository is a portfolio/index repository. It links to separate project repositories and summarizes local project status, plans, and next steps.
 
