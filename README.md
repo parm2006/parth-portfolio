@@ -11,13 +11,13 @@ A curated overview of software projects by Parth Mohnot, spanning full-stack app
 | Terraria Pixel Art Converter | Image processing, creator tool | CLI complete, web app planned | [Repo](https://github.com/parm2006/terraria-pixel-converter) |
 | AI Screenshot Organizer | Automation, AI utility | Prototype | [Repo](https://github.com/parm2006/AI_Screenshot_Organizer) |
 | StockMonitor / Deal Flow Tracker | Financial data, analytics | Redesign planned | [Related repo](https://github.com/parm2006/Market-Checker) |
+| ClashOfClankers | Game automation, AHK, OCR | Completed | [Repo](https://github.com/parm2006/ClashofClanker) |
 
 ## Project Concepts
 
 | Project | Area | Status |
 |---|---|---|
 | IdeaQueue | Productivity app, priority queues | Concept / redesign planned |
-| ClashOfClankers | Game automation, computer vision | Concept |
 | FossilCV | Computer vision, model training | Concept |
 | Particle | Research discovery, recommendations | Concept |
 
