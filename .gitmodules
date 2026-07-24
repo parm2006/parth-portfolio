@@ -13,12 +13,6 @@
 [submodule "AI_Screenshot_Organizer"]
 	path = AI_Screenshot_Organizer
 	url = https://github.com/parm2006/AI_Screenshot_Organizer.git
-[submodule "Flip7"]
-	path = Flip7
-	url = https://github.com/parm2006/Flip7.git
-[submodule "wordle-io"]
-	path = wordle-io
-	url = https://github.com/parm2006/wordle-io.git
 [submodule "UCSB-coursework"]
 	path = UCSB-coursework
 	url = https://github.com/parm2006/UCSB-coursework.git

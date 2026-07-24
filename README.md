@@ -4,19 +4,17 @@ A curated overview of software projects by Parth Mohnot, spanning full-stack app
 
 ---
 
-## 📌 Public Projects
+## 📌 Projects Index
 
 | Name | Status | Description |
 | :--- | :---: | :--- |
-| [**Orator-AI**](https://github.com/parm2006/Orator-AI) | ✅ | Full-stack real-time voice AI platform for conversation practice using Deepgram STT, Gemini LLM, and ElevenLabs TTS over WebSockets. |
 | [**DeskFlow**](https://github.com/parm2006/DeskFlow) | ⏱️ | Cross-device application designed to seamlessly share screens and sync clipboard content across multiple devices. |
-| [**ClashofClanker**](https://github.com/parm2006/ClashofClanker) | ✅ | Automated helper bot for Clash of Clans focused on wall upgrades, OCR, and resource efficiency. |
-| [**terraria-pixel-converter**](https://github.com/parm2006/terraria-pixel-converter) | ✅ | Image processing tool converting pixel art images into exact Terraria block placement maps and material cost breakdowns. |
 | [**Scholarly-Search-Engine**](https://github.com/parm2006/Scholarly-Search-Engine) | ✅ | Academic search engine retrieving relevant research papers from user queries while prioritizing contributions from women and underrepresented scholars. |
-| [**AI_Screenshot_Organizer**](https://github.com/parm2006/AI_Screenshot_Organizer) | ✅ | Python automation tool utilizing AI vision models to automatically organize and clean up local screenshot directories. |
-| [**Flip7**](https://github.com/parm2006/Flip7) | ⏱️ | Interactive card game simulation engine and UI implementation. |
-| [**wordle-io**](https://github.com/parm2006/wordle-io) | ✅ | Python terminal implementation of the popular Wordle word-guessing game. |
+| [**Orator-AI**](https://github.com/parm2006/Orator-AI) | ✅ | Full-stack real-time voice AI platform for conversation practice using Deepgram STT, Gemini LLM, and ElevenLabs TTS over WebSockets. |
 | [**UCSB-coursework**](https://github.com/parm2006/UCSB-coursework) | ✅ | Central portfolio index for UCSB Computer Science coursework, featuring public course hubs and submodules for CS 32, CS 154, and CS 170. |
+| [**terraria-pixel-converter**](https://github.com/parm2006/terraria-pixel-converter) | ✅ | Image processing tool converting pixel art images into exact Terraria block placement maps and material cost breakdowns. |
+| [**ClashofClanker**](https://github.com/parm2006/ClashofClanker) | ✅ | Automated helper bot for Clash of Clans focused on wall upgrades, OCR, and resource efficiency. |
+| [**AI_Screenshot_Organizer**](https://github.com/parm2006/AI_Screenshot_Organizer) | ✅ | Python automation tool utilizing AI vision models to automatically organize and clean up local screenshot directories. |
 
 ---
 
@@ -35,5 +33,6 @@ A curated overview of software projects by Parth Mohnot, spanning full-stack app
 Copyright (c) 2026 Parth Mohnot.
 
 This portfolio repository is licensed under the [MIT License](LICENSE). Linked project repositories may use different licenses or include third-party assets and dependencies with their own terms.
+
 
 
