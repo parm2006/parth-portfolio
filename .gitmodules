@@ -1,0 +1,27 @@
+[submodule "DeskFlow"]
+	path = DeskFlow
+	url = https://github.com/parm2006/DeskFlow.git
+[submodule "ClashofClanker"]
+	path = ClashofClanker
+	url = https://github.com/parm2006/ClashofClanker.git
+[submodule "terraria-pixel-converter"]
+	path = terraria-pixel-converter
+	url = https://github.com/parm2006/terraria-pixel-converter.git
+[submodule "Scholarly-Search-Engine"]
+	path = Scholarly-Search-Engine
+	url = https://github.com/parm2006/Scholarly-Search-Engine.git
+[submodule "AI_Screenshot_Organizer"]
+	path = AI_Screenshot_Organizer
+	url = https://github.com/parm2006/AI_Screenshot_Organizer.git
+[submodule "Flip7"]
+	path = Flip7
+	url = https://github.com/parm2006/Flip7.git
+[submodule "wordle-io"]
+	path = wordle-io
+	url = https://github.com/parm2006/wordle-io.git
+[submodule "UCSB-coursework"]
+	path = UCSB-coursework
+	url = https://github.com/parm2006/UCSB-coursework.git
+[submodule "Orator-AI"]
+	path = Orator-AI
+	url = https://github.com/parm2006/Orator-AI.git

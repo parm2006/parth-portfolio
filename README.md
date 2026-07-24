@@ -30,22 +30,10 @@ A curated overview of software projects by Parth Mohnot, spanning full-stack app
 
 ---
 
-## 📝 Detailed Project Notes
-
-- [Orator-AI](projects/orator-ai.md)
-- [Scholarly Search Engine](projects/scholarly-search-engine.md)
-- [Terraria Pixel Converter](projects/terraria-pixel-art-converter.md)
-- [AI Screenshot Organizer](projects/ai-screenshot-organizer.md)
-- [ClashofClanker](projects/clash-of-clankers.md)
-- [IdeaQueue](projects/ideaqueue.md)
-- [FossilCV](projects/fossilcv.md)
-- [Particle](projects/particle.md)
-
----
-
 ## License
 
 Copyright (c) 2026 Parth Mohnot.
 
 This portfolio repository is licensed under the [MIT License](LICENSE). Linked project repositories may use different licenses or include third-party assets and dependencies with their own terms.
+
 
