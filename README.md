@@ -15,6 +15,7 @@ A curated overview of software projects by Parth Mohnot, spanning full-stack app
 | [**terraria-pixel-converter**](https://github.com/parm2006/terraria-pixel-converter) | ✅ | Image processing tool converting pixel art images into exact Terraria block placement maps and material cost breakdowns. |
 | [**ClashofClanker**](https://github.com/parm2006/ClashofClanker) | ✅ | Automated helper bot for Clash of Clans focused on wall upgrades, OCR, and resource efficiency. |
 | [**AI_Screenshot_Organizer**](https://github.com/parm2006/AI_Screenshot_Organizer) | ✅ | Python automation tool utilizing AI vision models to automatically organize and clean up local screenshot directories. |
+| [**StarWarsRAG**](https://github.com/parm2006/StarWarsRAG) | ✅ | Fast Retrieval-Augmented Generation (RAG) system for querying Star Wars movie scripts with Qdrant, FastEmbed, and Llama 3.3. |
 
 ---
 

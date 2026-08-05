@@ -19,3 +19,6 @@
 [submodule "Orator-AI"]
 	path = Orator-AI
 	url = https://github.com/parm2006/Orator-AI.git
+[submodule "StarWarsRAG"]
+	path = StarWarsRAG
+	url = https://github.com/parm2006/StarWarsRAG.git
