@@ -1,6 +1,6 @@
-[submodule "DeskFlow"]
-	path = DeskFlow
-	url = https://github.com/parm2006/DeskFlow.git
+[submodule "Conduit"]
+	path = Conduit
+	url = https://github.com/parm2006/Conduit.git
 [submodule "ClashofClanker"]
 	path = ClashofClanker
 	url = https://github.com/parm2006/ClashofClanker.git

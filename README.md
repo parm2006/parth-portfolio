@@ -8,7 +8,7 @@ A curated overview of software projects by Parth Mohnot, spanning full-stack app
 
 | Name | Status | Description |
 | :--- | :---: | :--- |
-| [**DeskFlow**](https://github.com/parm2006/DeskFlow) | ⏱️ | Cross-device application designed to seamlessly share screens and sync clipboard content across multiple devices. |
+| [**Conduit**](https://github.com/parm2006/Conduit) | ✅ | Open-source Windows wireless KVM for securely sharing mouse and keyboard control, rich clipboard content, and Explorer file pastes between PCs over a local network. |
 | [**Scholarly-Search-Engine**](https://github.com/parm2006/Scholarly-Search-Engine) | ✅ | Academic search engine retrieving relevant research papers from user queries while prioritizing contributions from women and underrepresented scholars. |
 | [**Orator-AI**](https://github.com/parm2006/Orator-AI) | ✅ | Full-stack real-time voice AI platform for conversation practice using Deepgram STT, Gemini LLM, and ElevenLabs TTS over WebSockets. |
 | [**UCSB-coursework**](https://github.com/parm2006/UCSB-coursework) | ✅ | Central portfolio index for UCSB Computer Science coursework, featuring public course hubs and submodules for CS 32, CS 154, and CS 170. |
@@ -34,6 +34,5 @@ A curated overview of software projects by Parth Mohnot, spanning full-stack app
 Copyright (c) 2026 Parth Mohnot.
 
 This portfolio repository is licensed under the [MIT License](LICENSE). Linked project repositories may use different licenses or include third-party assets and dependencies with their own terms.
-
 
 
