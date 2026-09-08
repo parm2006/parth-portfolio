@@ -1,0 +1,10 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+.worktrees/
+
+# Personal resume materials
+/resumes/
+/PMohnotResume-*.tex
+/ResumeKeywordBank.tex
