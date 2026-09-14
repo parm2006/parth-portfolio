@@ -8,3 +8,9 @@ Thumbs.db
 /resumes/
 /PMohnotResume-*.tex
 /ResumeKeywordBank.tex
+
+# Local application and project workspaces
+/applications/
+/cover-letters/
+/docs/
+/tmp/
