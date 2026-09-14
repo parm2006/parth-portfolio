@@ -1,6 +1,6 @@
-# Parth Mohnot — Project Portfolio
+# Project Portfolio
 
-A curated overview of software projects by Parth Mohnot, spanning full-stack applications, voice AI platforms, computer vision tools, desktop applications, and UCSB computer science coursework.
+A curated overview of my software projects, spanning full-stack applications, voice AI platforms, computer vision tools, desktop applications.
 
 ---
 
