@@ -8,6 +8,7 @@ A curated overview of my software projects, spanning full-stack applications, vo
 
 | Name | What it is |
 | :--- | :--- |
+| [**SimpleEnglishRag**](https://github.com/parm2006/SimpleEnglishRag) | Universal local-first RAG engine indexing 476k+ Simple Wikipedia chunks with FastEmbed ONNX, Qdrant vector DB (cloud/local transfer engine), polymorphic multi-format ingestion (audio, vision, PDFs, AST code), hybrid dense+BM25 search, cross-encoder re-ranking, and MCP server support. |
 | [**WinDirStat AI Companion**](https://github.com/parm2006/windirstat_companion) | Local-AI disk assistant for WinDirStat built with native C++23/MFC and a C#/.NET 10 WPF companion, integrating Ollama to explain file usage, evaluate cleanup risk, and guide disk reclamation. |
 | [**NeuralNetworksRust**](https://github.com/parm2006/NeuralNetworksRust) | Pure-Rust deep-learning framework with reverse-mode autograd, multidimensional tensors and broadcasting, composable modules, convolution and pooling layers, activations, losses, optimizers, binary checkpoints, and numerical-gradient verification. |
 | [**Conduit**](https://github.com/parm2006/Conduit) | Windows wireless KVM for sharing mouse and keyboard input, rich clipboard formats, file pastes, and hardware-accelerated video across a local network. |
