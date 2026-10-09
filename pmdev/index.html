@@ -23,17 +23,34 @@
     .workspace-note{color:#536772}.tabs button{border-color:#aab8bd;color:#2e4653}.tabs button:hover{background:#e3ebee}
     .tabs button[aria-selected=true]{background:#a94319;border-color:#a94319;color:#fff}.feature{border-color:#cad5d8}
     .project-art[data-image-style="logo"]{background:#142732}.footer{color:#4d5d66}
-    .timeline{padding-block:58px 82px;border-top:1px solid var(--line)}
-    .timeline-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:28px}
-    .timeline h2{font-size:clamp(2rem,3vw,3.2rem);letter-spacing:-.055em;line-height:1.08;margin:0}
-    .timeline-head p{color:var(--muted);line-height:1.5;max-width:36ch;margin:0}
-    .timeline-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-    .timeline-list li{display:grid;grid-template-columns:minmax(140px,.23fr) minmax(190px,.32fr) 1fr;gap:clamp(18px,3vw,44px);align-items:start;padding:22px 0 24px;border-bottom:1px solid var(--line)}
-    .timeline-date{font:700 .84rem/1.45 var(--mono);color:#a94319;padding-top:5px}
-    .timeline-place{font-size:1.13rem;font-weight:800;letter-spacing:-.025em;line-height:1.2;margin:0}
-    .timeline-role{font-size:.84rem;color:#52707b;margin:6px 0 0;font-weight:700}
-    .timeline-detail{color:#364b57;line-height:1.55;margin:0;max-width:65ch}
-    @media(max-width:700px){.timeline-head{display:block}.timeline-head p{margin-top:12px}.timeline-list li{grid-template-columns:1fr;gap:5px;padding:21px 0}.timeline-date{padding:0}.timeline-detail{margin-top:8px}}
+    .timeline{padding-block:78px 110px;border-top:1px solid var(--line)}
+    .timeline-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:38px}
+    .timeline h2{font-size:clamp(2.1rem,3.3vw,3.4rem);letter-spacing:-.055em;line-height:1.08;margin:0}
+    .timeline-head p{color:var(--muted);line-height:1.5;max-width:35ch;margin:0}
+    .timeline-list{--line-progress:0%;position:relative;list-style:none;margin:0;padding:14px 0 12px}
+    .timeline-list::before,.timeline-list::after{content:"";position:absolute;left:calc(50% - 1px);top:0;width:2px;border-radius:2px}
+    .timeline-list::before{height:100%;background:#b8cbd2}
+    .timeline-list::after{height:var(--line-progress);background:#aa451b;transition:height .12s linear}
+    .timeline-item{display:grid;grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr);gap:0;min-height:210px;align-items:start;position:relative}
+    .timeline-node{grid-column:2;grid-row:1;justify-self:center;z-index:1;width:15px;height:15px;margin-top:35px;background:#f1f3f4;border:3px solid #aa451b;border-radius:50%;box-shadow:0 0 0 6px #f1f3f4}
+    .timeline-identity,.timeline-detail{grid-row:1}
+    .timeline-identity{display:flex;align-items:center;gap:16px;padding:22px 0}
+    .timeline-item[data-side="left"] .timeline-identity{grid-column:1;justify-content:flex-end;text-align:right}
+    .timeline-item[data-side="right"] .timeline-identity{grid-column:3;justify-content:flex-start;text-align:left}
+    .timeline-mark{flex:none;width:66px;height:66px;display:grid;place-items:center;padding:8px;border:1px solid #d4dfe3;border-radius:12px;background:#fff;overflow:hidden}
+    .timeline-mark img{display:block;max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+    .timeline-mark[data-mark="ucsb"] img{width:100%}
+    .timeline-mark[data-mark="archlab"] img{width:58px;max-width:none}
+    .timeline-copy{min-width:0}
+    .timeline-date{display:block;font:700 .78rem/1.4 var(--mono);color:#a94319;margin-bottom:6px}
+    .timeline-place{font-size:1.25rem;font-weight:800;letter-spacing:-.03em;line-height:1.16;margin:0}
+    .timeline-role{font-size:.88rem;color:#4c6670;margin:7px 0 0;font-weight:700}
+    .timeline-detail{color:#364b57;line-height:1.62;margin:42px 0 0;max-width:39ch;font-size:1rem}
+    .timeline-item[data-side="left"] .timeline-detail{grid-column:3;padding-left:24px}
+    .timeline-item[data-side="right"] .timeline-detail{grid-column:1;justify-self:end;text-align:right;padding-right:24px}
+    @media(max-width:760px){.timeline{padding-block:60px 78px}.timeline-head{display:block;margin-bottom:24px}.timeline-head p{margin-top:12px}.timeline-list{padding-left:20px}.timeline-list::before,.timeline-list::after{left:0}.timeline-item{grid-template-columns:30px minmax(0,1fr);min-height:0;padding-bottom:34px}.timeline-node{grid-column:1;margin-top:28px;justify-self:start;transform:translateX(-27px)}.timeline-item[data-side] .timeline-identity{grid-column:2;grid-row:1;justify-content:flex-start;text-align:left;padding:12px 0}.timeline-item[data-side] .timeline-detail{grid-column:2;grid-row:2;justify-self:start;text-align:left;padding:0;margin:0}.timeline-mark{width:54px;height:54px}.timeline-place{font-size:1.15rem}}
+    @media(max-width:650px){.links a:nth-child(n+3){display:none}.links{gap:16px}.brand{flex:none}}
+    @media(prefers-reduced-motion:reduce){.timeline-list::after{transition:none}}
   </style>
 </head>
 <body>
@@ -43,16 +60,36 @@
     <section class="wrap work" id="work"><h2>Selected projects</h2><p class="work-intro">Choose a project to see what it does and where to explore it.</p><div class="tabs" role="tablist" aria-label="Selected projects"><button type="button" role="tab" aria-selected="true" data-project="0">Conduit</button><button type="button" role="tab" aria-selected="false" data-project="1">Terraria Pixel Art Converter</button><button type="button" role="tab" aria-selected="false" data-project="2">SimpleEnglishRag</button><button type="button" role="tab" aria-selected="false" data-project="3">Clash of Clanker</button><button type="button" role="tab" aria-selected="false" data-project="4">IdeaQueue</button><button type="button" role="tab" aria-selected="false" data-project="5">WinDirStat AI Companion</button><button type="button" role="tab" aria-selected="false" data-project="6">NeuralNetworksRust</button><button type="button" role="tab" aria-selected="false" data-project="7">Orator AI</button><button type="button" role="tab" aria-selected="false" data-project="8">Scholarly Search Engine</button></div><article class="feature" id="project-panel" role="tabpanel" aria-live="polite"><div><h3 id="project-title">Conduit</h3><p id="project-description">A Windows wireless KVM that shares your mouse, keyboard, clipboard, files, and hardware-accelerated video across nearby PCs.</p><div class="feature-links"><a id="project-repo" href="https://github.com/parm2006/Conduit" target="_blank" rel="noopener noreferrer">Explore the code ↗</a><a id="project-live" hidden target="_blank" rel="noopener noreferrer">Try the app ↗</a></div></div><figure class="project-art" id="project-art" data-image-style="logo"><img id="project-image" src="assets/conduit-icon.png" alt="Conduit app icon" width="512" height="512"></figure></article></section>
     <section class="wrap timeline" id="experience" aria-labelledby="experience-title">
       <div class="timeline-head"><h2 id="experience-title">Where I've learned & built</h2><p>A few stops behind the projects: transit design, computer science, research, and teaching.</p></div>
-      <ol class="timeline-list">
-        <li><time class="timeline-date" datetime="2023-06">Jun–Aug 2023</time><div><h3 class="timeline-place">LA Metro</h3><p class="timeline-role">Project intern</p></div><p class="timeline-detail">Made station-design visualizations in AutoCAD and SketchUp, then used rider survey responses to inform the work.</p></li>
-        <li><time class="timeline-date" datetime="2024">2024–2028 (expected)</time><div><h3 class="timeline-place">UC Santa Barbara</h3><p class="timeline-role">Computer science + applied mathematics</p></div><p class="timeline-detail">Studying the foundations behind the systems I build, from algorithms to applied math.</p></li>
-        <li><time class="timeline-date" datetime="2026-03">Mar 2026–present</time><div><h3 class="timeline-place">UCSB ArchLab</h3><p class="timeline-role">Undergraduate researcher</p></div><p class="timeline-detail">Researching memory-conscious, zeroth-order methods for adapting language and speech models.</p></li>
-        <li><time class="timeline-date" datetime="2026-05">May 2026–present</time><div><h3 class="timeline-place">The Coder School</h3><p class="timeline-role">Coding instructor</p></div><p class="timeline-detail">Teaching Python and Scratch, helping students turn ideas into projects and debug them along the way.</p></li>
-      </ol>
+      <ol class="timeline-list" id="timeline-list" aria-label="Experience, newest first"></ol>
     </section>
   </main>
   <footer class="wrap footer"><span>Parth Mohnot · AI, games, and useful tools</span><span><a href="https://www.linkedin.com/in/parthmohnot/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a> &nbsp; <a href="https://github.com/parm2006/parth-portfolio" target="_blank" rel="noopener noreferrer">Full project index ↗</a></span></footer>
   <script>
+    const experience=[
+      {start:'2026-05',date:'May 2026–present',place:'The Coder School',role:'Coding instructor',detail:'Teaching Python and Scratch, helping students turn ideas into projects and debug them along the way.',logo:'assets/orgs/coder-school-favicon.png',logoAlt:'The Coder School icon',mark:'coder'},
+      {start:'2026-03',date:'Mar 2026–present',place:'UCSB ArchLab',role:'Undergraduate researcher',detail:'Researching memory-conscious, zeroth-order methods for adapting language and speech models.',logo:'assets/orgs/ucsb-cs.png',logoAlt:'UCSB Computer Science logo',mark:'archlab'},
+      {start:'2024-09',date:'2024–2028 (expected)',place:'UC Santa Barbara',role:'Computer science + applied mathematics',detail:'Studying the foundations behind the systems I build, from algorithms to applied math.',logo:'assets/orgs/ucsb.svg',logoAlt:'UC Santa Barbara wordmark',mark:'ucsb'},
+      {start:'2023-06',date:'Jun–Aug 2023',place:'LA Metro',role:'Project intern',detail:'Made station-design visualizations in AutoCAD and SketchUp, then used rider survey responses to inform the work.',logo:'assets/orgs/la-metro.svg',logoAlt:'LA Metro logo',mark:'metro'}
+    ];
+    const timelineList=document.getElementById('timeline-list');
+    experience.sort((a,b)=>b.start.localeCompare(a.start)).forEach((item,index)=>{
+      const row=document.createElement('li');row.className='timeline-item';row.dataset.side=index%2===0?'left':'right';
+      const identity=document.createElement('div');identity.className='timeline-identity';
+      const mark=document.createElement('span');mark.className='timeline-mark';mark.dataset.mark=item.mark;
+      const logo=document.createElement('img');logo.src=item.logo;logo.alt=item.logoAlt;logo.loading='lazy';mark.append(logo);
+      const copy=document.createElement('div');copy.className='timeline-copy';
+      const date=document.createElement('time');date.className='timeline-date';date.dateTime=item.start;date.textContent=item.date;
+      const place=document.createElement('h3');place.className='timeline-place';place.textContent=item.place;
+      const role=document.createElement('p');role.className='timeline-role';role.textContent=item.role;
+      copy.append(date,place,role);identity.append(mark,copy);
+      const node=document.createElement('span');node.className='timeline-node';node.setAttribute('aria-hidden','true');
+      const detail=document.createElement('p');detail.className='timeline-detail';detail.textContent=item.detail;
+      row.append(identity,node,detail);timelineList.append(row);
+    });
+    let timelineFrame=0;
+    function updateTimeline(){const bounds=timelineList.getBoundingClientRect();const progress=Math.max(0,Math.min(1,(window.innerHeight*.55-bounds.top)/bounds.height));timelineList.style.setProperty('--line-progress',`${(progress*100).toFixed(1)}%`);timelineFrame=0}
+    window.addEventListener('scroll',()=>{if(!timelineFrame)timelineFrame=requestAnimationFrame(updateTimeline)},{passive:true});
+    window.addEventListener('resize',updateTimeline);updateTimeline();
     const projects=[
       {name:'Conduit',description:'A Windows wireless KVM that shares your mouse, keyboard, clipboard, files, and hardware-accelerated video across nearby PCs.',repo:'https://github.com/parm2006/Conduit',kind:'devices',mark:'↔',art:'Two linked computer screens representing Conduit',command:'ser what is Conduit?',reply:'A Windows KVM for sharing input, clipboard, files, and video between nearby PCs.'},
       {name:'Terraria Pixel Art Converter',description:'Upload pixel art, match its colors to Terraria blocks and walls, and get a build preview plus a materials list.',repo:'https://github.com/parm2006/terraria-pixel-converter',live:'https://terraria-pixel-art-converter.vercel.app/',kind:'pixels',mark:'▦',art:'A colorful grid of Terraria-inspired pixel tiles',command:'ser what does the Terraria converter do?',reply:'It turns pixel art into a Terraria build preview and a list of blocks and walls.'},
