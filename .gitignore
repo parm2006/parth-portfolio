@@ -12,4 +12,6 @@ Thumbs.db
 # Private application and resume workspace
 /applications/
 /.agents/
+/.vercel/
+/pmdev/.vercel/
 
