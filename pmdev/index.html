@@ -87,7 +87,16 @@
       row.append(identity,node,detail);timelineList.append(row);
     });
     let timelineFrame=0;
-    function updateTimeline(){const bounds=timelineList.getBoundingClientRect();const progress=Math.max(0,Math.min(1,(window.innerHeight*.55-bounds.top)/bounds.height));timelineList.style.setProperty('--line-progress',`${(progress*100).toFixed(1)}%`);timelineFrame=0}
+    function updateTimeline(){
+      const bounds=timelineList.getBoundingClientRect();
+      const listTop=bounds.top+window.scrollY;
+      const start=listTop-window.innerHeight*.55;
+      const pageBottom=Math.max(0,document.documentElement.scrollHeight-window.innerHeight);
+      const end=Math.min(listTop+bounds.height-window.innerHeight*.55,pageBottom);
+      const progress=Math.max(0,Math.min(1,(window.scrollY-start)/Math.max(1,end-start)));
+      timelineList.style.setProperty('--line-progress',`${(progress*100).toFixed(1)}%`);
+      timelineFrame=0;
+    }
     window.addEventListener('scroll',()=>{if(!timelineFrame)timelineFrame=requestAnimationFrame(updateTimeline)},{passive:true});
     window.addEventListener('resize',updateTimeline);updateTimeline();
     const projects=[
