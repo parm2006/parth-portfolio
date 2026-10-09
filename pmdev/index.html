@@ -44,6 +44,8 @@
     .timeline-copy{min-width:0}
     .timeline-date{display:block;font:700 .78rem/1.4 var(--mono);color:#a94319;margin-bottom:6px}
     .timeline-place{font-size:1.25rem;font-weight:800;letter-spacing:-.03em;line-height:1.16;margin:0}
+    .timeline-place a{text-decoration:underline;text-decoration-color:#a94319;text-decoration-thickness:1px;text-underline-offset:4px}
+    .timeline-place a:hover{text-decoration-thickness:2px}
     .timeline-role{font-size:.88rem;color:#4c6670;margin:7px 0 0;font-weight:700}
     .timeline-detail{color:#364b57;line-height:1.62;margin:42px 0 0;max-width:39ch;font-size:1rem}
     .timeline-item[data-side="left"] .timeline-detail{grid-column:3;padding-left:24px}
@@ -66,7 +68,7 @@
   <footer class="wrap footer"><span>Parth Mohnot · AI, games, and useful tools</span><span><a href="https://www.linkedin.com/in/parthmohnot/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a> &nbsp; <a href="https://github.com/parm2006/parth-portfolio" target="_blank" rel="noopener noreferrer">Full project index ↗</a></span></footer>
   <script>
     const experience=[
-      {start:'2026-03',date:'Mar 2026–present',place:'UCSB ArchLab',role:'Undergraduate researcher',detail:'Researching memory-conscious, zeroth-order methods for adapting language and speech models.',logo:'assets/orgs/ucsb-cs.png',logoAlt:'UCSB Computer Science logo',mark:'archlab'},
+      {start:'2026-03',date:'Mar 2026–present',place:'UCSB ArchLab',url:'https://www.arch.cs.ucsb.edu/people/index.html',role:'Undergraduate researcher',detail:'Researching memory-conscious, zeroth-order methods for adapting language and speech models.',logo:'assets/orgs/ucsb-cs.png',logoAlt:'UCSB Computer Science logo',mark:'archlab'},
       {start:'2026-05',date:'May 2026–present',place:'The Coder School',role:'Coding instructor',detail:'Teaching Python and Scratch, helping students turn ideas into projects and debug them along the way.',logo:'assets/orgs/coder-school-favicon.png',logoAlt:'The Coder School icon',mark:'coder'},
       {start:'2024-09',date:'2024–2028 (expected)',place:'UC Santa Barbara',role:'Computer science + applied mathematics',detail:'Studying the foundations behind the systems I build, from algorithms to applied math.',logo:'assets/orgs/ucsb.svg',logoAlt:'UC Santa Barbara wordmark',mark:'ucsb'},
       {start:'2023-06',date:'Jun–Aug 2023',place:'LA Metro',role:'Project intern',detail:'Made station-design visualizations in AutoCAD and SketchUp, then used rider survey responses to inform the work.',logo:'assets/orgs/la-metro.svg',logoAlt:'LA Metro logo',mark:'metro'}
@@ -79,7 +81,8 @@
       const logo=document.createElement('img');logo.src=item.logo;logo.alt=item.logoAlt;logo.loading='lazy';mark.append(logo);
       const copy=document.createElement('div');copy.className='timeline-copy';
       const date=document.createElement('time');date.className='timeline-date';date.dateTime=item.start;date.textContent=item.date;
-      const place=document.createElement('h3');place.className='timeline-place';place.textContent=item.place;
+      const place=document.createElement('h3');place.className='timeline-place';
+      if(item.url){const link=document.createElement('a');link.href=item.url;link.target='_blank';link.rel='noopener noreferrer';link.textContent=item.place;place.append(link)}else{place.textContent=item.place}
       const role=document.createElement('p');role.className='timeline-role';role.textContent=item.role;
       copy.append(date,place,role);identity.append(mark,copy);
       const node=document.createElement('span');node.className='timeline-node';node.setAttribute('aria-hidden','true');
