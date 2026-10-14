@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Freezlit — a splayed deck of flashcards</title>
+  <g stroke="#236349" stroke-width="14" stroke-linejoin="round">
+    <rect x="155" y="82" width="202" height="324" rx="25" fill="#f6f5ef" transform="rotate(-18 256 400)"/>
+    <rect x="155" y="82" width="202" height="324" rx="25" fill="#e8eee6"/>
+    <g transform="rotate(18 256 400)">
+      <rect x="155" y="82" width="202" height="324" rx="25" fill="#f6f5ef"/>
+      <path d="M198 176h116M198 214h78" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
