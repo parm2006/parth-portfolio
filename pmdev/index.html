@@ -54,13 +54,70 @@
     @media(max-width:760px){.timeline{padding-block:60px 78px}.timeline-head{display:block;margin-bottom:24px}.timeline-head p{margin-top:12px}.timeline-list{padding-left:20px}.timeline-list::before,.timeline-list::after{left:0}.timeline-item{grid-template-columns:30px minmax(0,1fr);min-height:0;padding-bottom:34px}.timeline-node{grid-column:1;margin-top:28px;justify-self:start;transform:translateX(-27px)}.timeline-item[data-side] .timeline-identity{grid-column:2;grid-row:1;justify-content:flex-start;text-align:left;padding:12px 0}.timeline-item[data-side] .timeline-detail{grid-column:2;grid-row:2;justify-self:start;text-align:left;padding:0;margin:0}.timeline-mark{width:54px;height:54px}.timeline-place{font-size:1.15rem}}
     @media(max-width:650px){.links a:nth-child(n+3){display:none}.links{gap:16px}.brand{flex:none}}
     @media(prefers-reduced-motion:reduce){.timeline-list::after{transition:none}}
+    .work h2{margin-bottom:24px}.project-jumps a{display:inline-flex;align-items:center;min-height:44px;border:1px solid #a9b7b2;padding:10px 13px;border-radius:5px;color:var(--ink);font-size:.82rem;font-weight:700;text-decoration:none}.project-jumps a:hover{background:var(--accent-soft)}.project-list{display:grid;gap:24px}.project-list .feature{scroll-margin-top:24px}.project-list .feature:focus{outline:none}.project-list .feature:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
   </style>
 </head>
 <body>
   <header class="wrap nav"><a class="brand" href="#top">Parth Mohnot</a><nav class="links" aria-label="Main navigation"><a href="#work">Projects</a><a href="#experience">Experience</a><a href="https://github.com/parm2006" target="_blank" rel="noopener noreferrer">GitHub</a><a href="https://www.linkedin.com/in/parthmohnot/" target="_blank" rel="noopener noreferrer">LinkedIn</a></nav></header>
   <main id="top">
     <section class="wrap hero"><div><h1>Useful things, <em>built well.</em></h1><p>I build AI systems, game projects, and practical tools for problems I want to solve.</p><div class="actions"><a class="button primary" href="#work">Explore my work</a><a class="button secondary" href="https://github.com/parm2006" target="_blank" rel="noopener noreferrer">GitHub profile</a></div></div><div><div class="workspace" aria-label="Interactive overview of Parth's projects"><div class="workspace-top"><span>parth@workspace</span><span class="window-buttons" aria-hidden="true"><i></i><i></i><i></i></span></div><div class="workspace-body"><div class="command">parth@workspace:~$ <span id="command">ser what is Conduit?</span><span class="cursor" aria-hidden="true"></span></div><p class="reply" id="reply">A Windows KVM for sharing input, clipboard, files, and video between nearby PCs.</p><div class="mini-grid" role="group" aria-label="Explore a project"><button type="button" class="active" data-hero="0"><span aria-hidden="true">↔</span>Conduit</button><button type="button" data-hero="1"><span aria-hidden="true">▦</span>Terraria</button><button type="button" data-hero="2"><span aria-hidden="true">⌕</span>SimpleEnglishRag</button><button type="button" data-hero="4"><span aria-hidden="true">✎</span>IdeaQueue</button></div></div></div></div></section>
-    <section class="wrap work" id="work"><h2>Selected projects</h2><p class="work-intro">Choose a project to see what it does and where to explore it.</p><div class="tabs" role="tablist" aria-label="Selected projects"><button type="button" role="tab" aria-selected="true" data-project="0">Conduit</button><button type="button" role="tab" aria-selected="false" data-project="1">Terraria Pixel Art Converter</button><button type="button" role="tab" aria-selected="false" data-project="2">SimpleEnglishRag</button><button type="button" role="tab" aria-selected="false" data-project="3">Clash of Clanker</button><button type="button" role="tab" aria-selected="false" data-project="4">IdeaQueue</button><button type="button" role="tab" aria-selected="false" data-project="5">WinDirStat AI Companion</button><button type="button" role="tab" aria-selected="false" data-project="6">NeuralNetworksRust</button><button type="button" role="tab" aria-selected="false" data-project="7">Orator AI</button><button type="button" role="tab" aria-selected="false" data-project="8">Scholarly Search Engine</button><button type="button" role="tab" aria-selected="false" data-project="9">Freezlit</button></div><article class="feature" id="project-panel" role="tabpanel" aria-live="polite"><div><h3 id="project-title">Conduit</h3><p id="project-description">A Windows wireless KVM that shares your mouse, keyboard, clipboard, files, and hardware-accelerated video across nearby PCs.</p><div class="feature-links"><a id="project-repo" href="https://github.com/parm2006/Conduit" target="_blank" rel="noopener noreferrer">Explore the code ↗</a><a id="project-live" hidden target="_blank" rel="noopener noreferrer">Try the app ↗</a></div></div><figure class="project-art" id="project-art" data-image-style="logo"><img id="project-image" src="assets/conduit-icon.png" alt="Conduit app icon" width="512" height="512"></figure></article></section>
+    <section class="wrap work" id="work" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <nav class="tabs project-jumps" aria-label="Jump to a project">
+        <a href="#project-conduit">Conduit</a>
+        <a href="#project-terraria-pixel-art-converter">Terraria Pixel Art Converter</a>
+        <a href="#project-simpleenglishrag">SimpleEnglishRag</a>
+        <a href="#project-clash-of-clanker">Clash of Clanker</a>
+        <a href="#project-ideaqueue">IdeaQueue</a>
+        <a href="#project-windirstat-ai-companion">WinDirStat AI Companion</a>
+        <a href="#project-neuralnetworksrust">NeuralNetworksRust</a>
+        <a href="#project-orator-ai">Orator AI</a>
+        <a href="#project-scholarly-search-engine">Scholarly Search Engine</a>
+        <a href="#project-freezlit">Freezlit</a>
+      </nav>
+      <div class="project-list">
+        <article class="feature" id="project-conduit" aria-labelledby="project-conduit-title" tabindex="-1">
+          <div><h3 id="project-conduit-title">Conduit</h3><p>A Windows wireless KVM that shares your mouse, keyboard, clipboard, files, and hardware-accelerated video across nearby PCs.</p><div class="feature-links"><a href="https://github.com/parm2006/Conduit" target="_blank" rel="noopener noreferrer">Explore the code ↗</a></div></div>
+          <figure class="project-art" data-image-style="logo"><img src="assets/conduit-icon.png" alt="Conduit app icon" width="512" height="512" loading="lazy"></figure>
+        </article>
+        <article class="feature" id="project-terraria-pixel-art-converter" aria-labelledby="project-terraria-pixel-art-converter-title" tabindex="-1">
+          <div><h3 id="project-terraria-pixel-art-converter-title">Terraria Pixel Art Converter</h3><p>Upload pixel art, match its colors to Terraria blocks and walls, and get a build preview plus a materials list.</p><div class="feature-links"><a href="https://github.com/parm2006/terraria-pixel-converter" target="_blank" rel="noopener noreferrer">Explore the code ↗</a><a href="https://terraria-pixel-art-converter.vercel.app/" target="_blank" rel="noopener noreferrer">terraria-pixel-art-converter.vercel.app/</a></div></div>
+          <figure class="project-art" data-image-style="illustration"><img src="assets/terraria-art.webp" alt="Illustration of pixel-art terrain and a small house built from square tiles" width="512" height="512" loading="lazy"></figure>
+        </article>
+        <article class="feature" id="project-simpleenglishrag" aria-labelledby="project-simpleenglishrag-title" tabindex="-1">
+          <div><h3 id="project-simpleenglishrag-title">SimpleEnglishRag</h3><p>A local-first retrieval system that combines dense and keyword search across Simple Wikipedia and your own files.</p><div class="feature-links"><a href="https://github.com/parm2006/SimpleEnglishRag" target="_blank" rel="noopener noreferrer">Explore the code ↗</a></div></div>
+          <figure class="project-art" data-image-style="illustration"><img src="assets/ser-art.webp" alt="Illustration of document pages connected to a search magnifying glass" width="512" height="512" loading="lazy"></figure>
+        </article>
+        <article class="feature" id="project-clash-of-clanker" aria-labelledby="project-clash-of-clanker-title" tabindex="-1">
+          <div><h3 id="project-clash-of-clanker-title">Clash of Clanker</h3><p>Clash of Clans automation using Android Debug Bridge, OCR, and image matching for battles and routine tasks.</p><div class="feature-links"><a href="https://github.com/parm2006/ClashofClanker" target="_blank" rel="noopener noreferrer">Explore the code ↗</a></div></div>
+          <figure class="project-art" data-image-style="illustration"><img src="assets/clash-art.webp" alt="Illustration of a strategy game map on a phone with automation waypoints" width="512" height="512" loading="lazy"></figure>
+        </article>
+        <article class="feature" id="project-ideaqueue" aria-labelledby="project-ideaqueue-title" tabindex="-1">
+          <div><h3 id="project-ideaqueue-title">IdeaQueue</h3><p>A private idea box that captures thoughts by text, dictation, or an iPhone Shortcut, then surfaces what to revisit next.</p><div class="feature-links"><a href="https://github.com/parm2006/IdeaQueue" target="_blank" rel="noopener noreferrer">Explore the code ↗</a><a href="https://ideaqueue.vercel.app" target="_blank" rel="noopener noreferrer">ideaqueue.vercel.app</a></div></div>
+          <figure class="project-art" data-image-style="screenshot"><img src="assets/ideaqueue-site.webp" alt="Actual IdeaQueue sign-in screen" width="512" height="512" loading="lazy"></figure>
+        </article>
+        <article class="feature" id="project-windirstat-ai-companion" aria-labelledby="project-windirstat-ai-companion-title" tabindex="-1">
+          <div><h3 id="project-windirstat-ai-companion-title">WinDirStat AI Companion</h3><p>A local AI companion that helps explain disk usage and assess cleanup risk inside a Windows desktop workflow.</p><div class="feature-links"><a href="https://github.com/parm2006/windirstat_companion" target="_blank" rel="noopener noreferrer">Explore the code ↗</a></div></div>
+          <figure class="project-art" data-image-style="illustration"><img src="assets/windirstat-art.webp" alt="Illustration of a disk usage treemap under a magnifying glass" width="512" height="512" loading="lazy"></figure>
+        </article>
+        <article class="feature" id="project-neuralnetworksrust" aria-labelledby="project-neuralnetworksrust-title" tabindex="-1">
+          <div><h3 id="project-neuralnetworksrust-title">NeuralNetworksRust</h3><p>A pure-Rust deep-learning framework with tensors, automatic differentiation, optimizers, and numerical-gradient checks.</p><div class="feature-links"><a href="https://github.com/parm2006/NeuralNetworksRust" target="_blank" rel="noopener noreferrer">Explore the code ↗</a></div></div>
+          <figure class="project-art" data-image-style="illustration"><img src="assets/neural-art.webp" alt="Illustration of a neural network graph with a highlighted computation path" width="512" height="512" loading="lazy"></figure>
+        </article>
+        <article class="feature" id="project-orator-ai" aria-labelledby="project-orator-ai-title" tabindex="-1">
+          <div><h3 id="project-orator-ai-title">Orator AI</h3><p>A real-time conversation-practice platform using speech recognition, Gemini, voice synthesis, and WebSockets.</p><div class="feature-links"><a href="https://github.com/parm2006/Orator-AI" target="_blank" rel="noopener noreferrer">Explore the code ↗</a></div></div>
+          <figure class="project-art" data-image-style="illustration"><img src="assets/orator-art.webp" alt="Illustration of a voice conversation with waveform and microphone" width="512" height="512" loading="lazy"></figure>
+        </article>
+        <article class="feature" id="project-scholarly-search-engine" aria-labelledby="project-scholarly-search-engine-title" tabindex="-1">
+          <div><h3 id="project-scholarly-search-engine-title">Scholarly Search Engine</h3><p>An academic search tool for discovering papers and exploring citation and author information.</p><div class="feature-links"><a href="https://github.com/parm2006/Scholarly-Search-Engine" target="_blank" rel="noopener noreferrer">Explore the code ↗</a></div></div>
+          <figure class="project-art" data-image-style="illustration"><img src="assets/scholarly-art.webp" alt="Illustration of research papers, citations, and a search magnifying glass" width="512" height="512" loading="lazy"></figure>
+        </article>
+        <article class="feature" id="project-freezlit" aria-labelledby="project-freezlit-title" tabindex="-1">
+          <div><h3 id="project-freezlit-title">Freezlit</h3><p>A free Windows and Mac study app with flashcards, spaced review, practice tests, and study games. Cards, images, and progress stay on your computer, with no account or subscription.</p><div class="feature-links"><a href="https://github.com/parm2006/freezlit" target="_blank" rel="noopener noreferrer">Explore the code ↗</a><a href="https://github.com/parm2006/freezlit/releases" target="_blank" rel="noopener noreferrer">Download for Windows &amp; Mac ↗</a></div></div>
+          <figure class="project-art" data-image-style="logo"><img src="assets/freezlit-icon.svg" alt="Freezlit app icon: a splayed deck of flashcards" width="512" height="512" loading="lazy"></figure>
+        </article>
+      </div>
+    </section>
     <section class="wrap timeline" id="experience" aria-labelledby="experience-title">
       <div class="timeline-head"><h2 id="experience-title">Where I've learned & built</h2><p>A few stops behind the projects: transit design, computer science, research, and teaching.</p></div>
       <ol class="timeline-list" id="timeline-list" aria-label="Experience, featured current roles first"></ol>
@@ -103,32 +160,9 @@
     }
     window.addEventListener('scroll',()=>{if(!timelineFrame)timelineFrame=requestAnimationFrame(updateTimeline)},{passive:true});
     window.addEventListener('resize',updateTimeline);updateTimeline();
-    const projects=[
-      {name:'Conduit',description:'A Windows wireless KVM that shares your mouse, keyboard, clipboard, files, and hardware-accelerated video across nearby PCs.',repo:'https://github.com/parm2006/Conduit',kind:'devices',mark:'↔',art:'Two linked computer screens representing Conduit',command:'ser what is Conduit?',reply:'A Windows KVM for sharing input, clipboard, files, and video between nearby PCs.'},
-      {name:'Terraria Pixel Art Converter',description:'Upload pixel art, match its colors to Terraria blocks and walls, and get a build preview plus a materials list.',repo:'https://github.com/parm2006/terraria-pixel-converter',live:'https://terraria-pixel-art-converter.vercel.app/',kind:'pixels',mark:'▦',art:'A colorful grid of Terraria-inspired pixel tiles',command:'ser what does the Terraria converter do?',reply:'It turns pixel art into a Terraria build preview and a list of blocks and walls.'},
-      {name:'SimpleEnglishRag',description:'A local-first retrieval system that combines dense and keyword search across Simple Wikipedia and your own files.',repo:'https://github.com/parm2006/SimpleEnglishRag',kind:'search',mark:'⌕',art:'A search symbol representing SimpleEnglishRag',command:'ser how do I search my files?',reply:'SimpleEnglishRag indexes documents and retrieves relevant context with hybrid search.'},
-      {name:'Clash of Clanker',description:'Clash of Clans automation using Android Debug Bridge, OCR, and image matching for battles and routine tasks.',repo:'https://github.com/parm2006/ClashofClanker',kind:'game',mark:'◇',art:'A game tile representing Clash of Clanker',command:'ser what is Clash of Clanker?',reply:'A game automation project built with ADB, screen capture, OCR, and image matching.'},
-      {name:'IdeaQueue',description:'A private idea box that captures thoughts by text, dictation, or an iPhone Shortcut, then surfaces what to revisit next.',repo:'https://github.com/parm2006/IdeaQueue',live:'https://ideaqueue.vercel.app',kind:'queue',mark:'✎',art:'Layered note cards representing IdeaQueue',command:'ser what is IdeaQueue?',reply:'A place to capture ideas quickly and let a priority queue bring the next one forward.'},
-      {name:'WinDirStat AI Companion',description:'A local AI companion that helps explain disk usage and assess cleanup risk inside a Windows desktop workflow.',repo:'https://github.com/parm2006/windirstat_companion',kind:'devices',mark:'▣',art:'Layered windows representing WinDirStat AI Companion',command:'ser what does WinDirStat AI Companion do?',reply:'It uses local AI to explain file usage and help assess cleanup risk.'},
-      {name:'NeuralNetworksRust',description:'A pure-Rust deep-learning framework with tensors, automatic differentiation, optimizers, and numerical-gradient checks.',repo:'https://github.com/parm2006/NeuralNetworksRust',kind:'code',mark:'∑',art:'Code panel representing NeuralNetworksRust',command:'ser what is NeuralNetworksRust?',reply:'A Rust framework for building and training neural networks from the ground up.'},
-      {name:'Orator AI',description:'A real-time conversation-practice platform using speech recognition, Gemini, voice synthesis, and WebSockets.',repo:'https://github.com/parm2006/Orator-AI',kind:'code',mark:'◖',art:'Interface panel representing Orator AI',command:'ser what is Orator AI?',reply:'A voice-based practice tool for conversations and debates.'},
-      {name:'Scholarly Search Engine',description:'An academic search tool for discovering papers and exploring citation and author information.',repo:'https://github.com/parm2006/Scholarly-Search-Engine',kind:'search',mark:'⌕',art:'Search symbol representing Scholarly Search Engine',command:'ser what is Scholarly Search Engine?',reply:'An academic paper search tool with citation and author information.'},
-      {name:'Freezlit',description:'A free Windows and Mac study app with flashcards, spaced review, practice tests, and study games. Cards, images, and progress stay on your computer, with no account or subscription.',repo:'https://github.com/parm2006/freezlit',live:'https://github.com/parm2006/freezlit/releases',liveLabel:'Download for Windows & Mac ↗'}
-    ];
-    const buttons=[...document.querySelectorAll('[data-project]')],heroButtons=[...document.querySelectorAll('[data-hero]')];
-    const media=[
-      {src:'assets/conduit-icon.png',alt:'Conduit app icon',style:'logo'},
-      {src:'assets/terraria-art.webp',alt:'Illustration of pixel-art terrain and a small house built from square tiles'},
-      {src:'assets/ser-art.webp',alt:'Illustration of document pages connected to a search magnifying glass'},
-      {src:'assets/clash-art.webp',alt:'Illustration of a strategy game map on a phone with automation waypoints'},
-      {src:'assets/ideaqueue-site.webp',alt:'Actual IdeaQueue sign-in screen',style:'screenshot'},
-      {src:'assets/windirstat-art.webp',alt:'Illustration of a disk usage treemap under a magnifying glass'},
-      {src:'assets/neural-art.webp',alt:'Illustration of a neural network graph with a highlighted computation path'},
-      {src:'assets/orator-art.webp',alt:'Illustration of a voice conversation with waveform and microphone'},
-      {src:'assets/scholarly-art.webp',alt:'Illustration of research papers, citations, and a search magnifying glass'},
-      {src:'assets/freezlit-icon.svg',alt:'Freezlit app icon: a splayed deck of flashcards',style:'logo'}
-    ];
-    function selectProject(index){const p=projects[index],m=media[index];buttons.forEach(b=>b.setAttribute('aria-selected',String(Number(b.dataset.project)===index)));document.getElementById('project-title').textContent=p.name;document.getElementById('project-description').textContent=p.description;document.getElementById('project-repo').href=p.repo;const live=document.getElementById('project-live');live.hidden=!p.live;if(p.live){live.href=p.live;live.textContent=p.liveLabel||p.live.replace(/^https?:\/\//,'')}const art=document.getElementById('project-art');art.dataset.imageStyle=m.style||'illustration';const img=document.getElementById('project-image');img.src=m.src;img.alt=m.alt}
+    const heroButtons=[...document.querySelectorAll('[data-hero]')];
+    const projectIds=["project-conduit","project-terraria-pixel-art-converter","project-simpleenglishrag","project-clash-of-clanker","project-ideaqueue","project-windirstat-ai-companion","project-neuralnetworksrust","project-orator-ai","project-scholarly-search-engine","project-freezlit"];
+    function jumpToProject(index){const target=document.getElementById(projectIds[index]);target.focus({preventScroll:true});target.scrollIntoView({block:'start'})}
     const questions=[
       {project:0,command:'ser what is Conduit?',reply:'A Windows KVM for sharing input, clipboard, files, and video between nearby PCs.'},
       {project:0,command:'ser can I move my cursor between PCs?',reply:'Conduit routes mouse and keyboard input across Windows machines on the same network.'},
@@ -141,11 +175,11 @@
       {project:4,command:'ser can I capture an idea by voice?',reply:'IdeaQueue accepts dictation, text, and an iPhone Shortcut.'},
       {project:null,command:'ser what do you like building?',reply:'AI systems, game projects, and practical tools for problems I want to solve.'},
       {project:null,command:'ser what can I try live?',reply:'The Terraria converter and IdeaQueue both have live apps linked below.'},
-      {project:null,command:'ser where should I start?',reply:'Start with Conduit, then explore the game and AI projects in the tabs below.'}
+      {project:null,command:'ser where should I start?',reply:'Start with Conduit, then explore the game and AI projects below.'}
     ];
     function showQuestion(q){heroButtons.forEach(b=>b.classList.toggle('active',Number(b.dataset.hero)===q.project&&q.project!==null));document.getElementById('command').textContent=q.command;document.getElementById('reply').textContent=q.reply}
     function selectHero(index){showQuestion(questions.find(q=>q.project===index))}
-    buttons.forEach(b=>b.addEventListener('click',()=>selectProject(Number(b.dataset.project))));heroButtons.forEach(b=>b.addEventListener('click',()=>{selectHero(Number(b.dataset.hero));selectProject(Number(b.dataset.hero))}));
+    heroButtons.forEach(b=>b.addEventListener('click',()=>{selectHero(Number(b.dataset.hero));jumpToProject(Number(b.dataset.hero))}));
     if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
       const cycle=[0,1,2,4,null],lastByProject=new Map();let position=0,holdUntil=Date.now()+3000;
       function randomQuestion(project){const options=questions.filter(q=>q.project===project),last=lastByProject.get(project);const choices=options.filter(q=>q!==last);const next=choices[Math.floor(Math.random()*choices.length)];lastByProject.set(project,next);return next}
