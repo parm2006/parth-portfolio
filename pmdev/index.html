@@ -161,30 +161,21 @@
     window.addEventListener('scroll',()=>{if(!timelineFrame)timelineFrame=requestAnimationFrame(updateTimeline)},{passive:true});
     window.addEventListener('resize',updateTimeline);updateTimeline();
     const heroButtons=[...document.querySelectorAll('[data-hero]')];
-    const projectIds=["project-conduit","project-terraria-pixel-art-converter","project-simpleenglishrag","project-clash-of-clanker","project-ideaqueue","project-windirstat-ai-companion","project-neuralnetworksrust","project-orator-ai","project-scholarly-search-engine","project-freezlit"];
-    function jumpToProject(index){const target=document.getElementById(projectIds[index]);target.focus({preventScroll:true});target.scrollIntoView({block:'start'})}
     const questions=[
       {project:0,command:'ser what is Conduit?',reply:'A Windows KVM for sharing input, clipboard, files, and video between nearby PCs.'},
-      {project:0,command:'ser can I move my cursor between PCs?',reply:'Conduit routes mouse and keyboard input across Windows machines on the same network.'},
-      {project:0,command:'ser what else can Conduit share?',reply:'Clipboard content, pasted files, and a hardware-accelerated video stream.'},
+      {project:null,command:'ser why is the sky blue?',reply:'Air molecules scatter short blue wavelengths of sunlight more strongly than longer red wavelengths.'},
       {project:1,command:'ser what does the Terraria converter do?',reply:'It turns pixel art into a Terraria build preview and a list of blocks and walls.'},
-      {project:1,command:'ser can I build this image in Terraria?',reply:'The converter maps image colors to block and wall materials you can use in-game.'},
-      {project:2,command:'ser how do I search my files?',reply:'SimpleEnglishRag indexes documents and retrieves relevant context with hybrid search.'},
-      {project:2,command:'ser what is hybrid retrieval?',reply:'It combines semantic and keyword search to find useful passages.'},
+      {project:null,command:'ser how does a steam engine work?',reply:'Expanding steam moves a piston or turbine, converting heat into mechanical work.'},
+      {project:2,command:'ser what is SimpleEnglishRag?',reply:'A retrieval engine that searches Simple English Wikipedia and uses local models to answer with source citations.'},
+      {project:null,command:'ser what is photosynthesis?',reply:'Plants use light energy to turn water and carbon dioxide into sugars, releasing oxygen along the way.'},
       {project:4,command:'ser where should this idea go?',reply:'IdeaQueue captures it now and brings it back when it is worth revisiting.'},
-      {project:4,command:'ser can I capture an idea by voice?',reply:'IdeaQueue accepts dictation, text, and an iPhone Shortcut.'},
-      {project:null,command:'ser what do you like building?',reply:'AI systems, game projects, and practical tools for problems I want to solve.'},
-      {project:null,command:'ser what can I try live?',reply:'The Terraria converter and IdeaQueue both have live apps linked below.'},
-      {project:null,command:'ser where should I start?',reply:'Start with Conduit, then explore the game and AI projects below.'}
+      {project:null,command:'ser why does the Moon have phases?',reply:'As the Moon orbits Earth, we see different portions of its sunlit half.'}
     ];
     function showQuestion(q){heroButtons.forEach(b=>b.classList.toggle('active',Number(b.dataset.hero)===q.project&&q.project!==null));document.getElementById('command').textContent=q.command;document.getElementById('reply').textContent=q.reply}
-    function selectHero(index){showQuestion(questions.find(q=>q.project===index))}
-    heroButtons.forEach(b=>b.addEventListener('click',()=>{selectHero(Number(b.dataset.hero));jumpToProject(Number(b.dataset.hero))}));
+    let questionPosition=0,holdUntil=Date.now()+5400;
+    heroButtons.forEach(b=>b.addEventListener('click',()=>{questionPosition=questions.findIndex(q=>q.project===Number(b.dataset.hero));showQuestion(questions[questionPosition]);holdUntil=Date.now()+9500}));
     if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
-      const cycle=[0,1,2,4,null],lastByProject=new Map();let position=0,holdUntil=Date.now()+3000;
-      function randomQuestion(project){const options=questions.filter(q=>q.project===project),last=lastByProject.get(project);const choices=options.filter(q=>q!==last);const next=choices[Math.floor(Math.random()*choices.length)];lastByProject.set(project,next);return next}
-      heroButtons.forEach(b=>b.addEventListener('click',()=>{holdUntil=Date.now()+9500}));
-      setInterval(()=>{if(document.hidden||Date.now()<holdUntil)return;position=(position+1)%cycle.length;showQuestion(randomQuestion(cycle[position]))},5400)
+      setInterval(()=>{if(document.hidden||Date.now()<holdUntil)return;questionPosition=(questionPosition+1)%questions.length;showQuestion(questions[questionPosition])},5400)
     }
   </script>
 </body>
